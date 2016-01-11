@@ -25,7 +25,7 @@ png(filename = "plot4.png",
     width = 480, height = 480, units = "px")
 
 par(mfrow=c(2,2))
-
+GlobalActivePower<-as.numeric(as.vector(data$Global_active_power))
 plot(data$date_time,GlobalActivePower,type="l",xlab="",ylab="Global Active Power")
 Voltage<-as.numeric(as.vector(data$Voltage))
 plot(data$date_time,Voltage,type="l",xlab="datetime",ylab="Voltage")
